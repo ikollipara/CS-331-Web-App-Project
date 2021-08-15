@@ -1,0 +1,11 @@
+#+TITLE: CS 331 Web App Project
+#+AUTHOR: Ian Kollipara
+
+* Introduction
+This Software Development Activity will contain the source code for the activity. It will lead you through developing a Python Web Application that uses:
+
+- =Jinja2= templating
+- =FastAPI=
+- =Calendaric API=
+
++ This project will be updated at certain milestones for the class, which Professor Gubanyi will outline.

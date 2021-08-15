@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap');
+
+:root {
+    --header-font: 'Noto Sans', sans-serif;
+    --body-font:   'Noto Sans JP', sans-serif;
+    --uranian-blue: #BCE7FD;
+    --opera-mauve: #C492B1;
+    --mystic-maroon: #AF3B6E;
+    --charcoal: #424651;
+    --text-color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    font-family: var(--body-font);
+    border-bottom: solid .125em var(--opera-mauve);
+}
+
+.nav-link {
+    margin-right: 1em;
+    text-decoration: none;
+    color: var(--charcoal);
+    padding: .125em;
+}
+
+.nav-link:hover {
+    background-color: var(--opera-mauve);
+    color: var(--text-color);
+    padding: .125em;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--header-font);
+}
+
+.section-title {
+    text-align: center;
+    font-family: var(--header-font);
+}
+
+p {
+    font-family: var(--body-font);
+}
