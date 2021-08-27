@@ -13,9 +13,13 @@ function createHolidayElement(name, date, description) {
 
     nameEl.textContent = name;
     dateEl.textContent = date;
-    descriptionEl.textContent = descriptionEl;
+    descriptionEl.textContent = description;
 
-    holidayEl.append([nameEl, dateEl, descriptionEl]);
+    holidayEl.append(nameEl);
+    holidayEl.append(dateEl);
+    holidayEl.append(descriptionEl);
+
+    return holidayEl;
 }
 
 function getToday() {
