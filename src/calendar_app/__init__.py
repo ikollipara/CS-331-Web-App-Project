@@ -9,17 +9,14 @@ from fastapi import FastAPI, APIRouter
 from fastapi.staticfiles import StaticFiles
 
 # Routers
-from .router import router
-
-ROUTERS: List[APIRouter] = [router]
-
+from .router import api
 
 def fast_api_factory() -> FastAPI:
     app = FastAPI()
 
     app.mount("/static", StaticFiles(directory="static"), name="static")
+    app.mount("/api", api)
+    app.mount("/", StaticFiles(directory="pages", html=True), name="pages")
 
-    for router in ROUTERS:
-        app.include_router(router)
 
     return app

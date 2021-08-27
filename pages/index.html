@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Holiday Search</title>
-        <meta name="description" content="Holiday Search">
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+        <link href="http://localhost:8000/static/styles.css" rel="stylesheet">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -22,17 +22,20 @@
 
         <nav class="navigation">
             <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/today">Today</a>
-            <a class="nav-link" href="/search">Search</a>
+            <a class="nav-link" href="/today.html">Today</a>
+            <a class="nav-link" href="/search.html">Search</a>
         </nav>
-
-        <h1 class="page-title">Search</h1>
-        <p>Search for a Holiday by Date</p>
-        <hr />
-        <form action="/results">
-            <label for="date">Date:</label>
-            <input type="date" name="search_date">
-            <input type="submit" value="Submit">
-        </form>
+        <h1 class="page-title">Holiday Search</h1>
+        <p>
+            This simple web application teaches
+            how to develop a web server in Python
+            as well as how to serve the static assets.
+        </p>
+        <p>
+            This was developed by Ian Kollipara for
+            CS 331 Software Engineering with the idea
+            that it would be completed in 2 weeks. This
+            is designed as the absolute beginner project.
+        </p>
     </body>
 </html>
