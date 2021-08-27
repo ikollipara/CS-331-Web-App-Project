@@ -37,3 +37,6 @@ function getDate() {
             section.append(el);
         }))
 }
+
+if(window.location.pathname === "/today.html") window.onload = getToday;
+if(window.location.pathname === "/results.html") window.onload = getDate;
