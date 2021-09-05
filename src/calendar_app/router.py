@@ -39,4 +39,4 @@ def date(
     Handles all access and parameters for the endpoint /api/date
     """
 
-    return holiday_service.get_by_date(search_date)
+    raise NotImplementedError()

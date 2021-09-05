@@ -33,14 +33,6 @@ function getToday() {
 }
 
 function getDate() {
-    fetch(`${API}/date${window.location.search}`)
-        .then(res => res.json())
-        .then(json => json.forEach(holiday => {
-            let section = document.querySelector("#holidays");
-            let el = createHolidayElement(holiday.name, holiday.date, holiday.description);
-            section.append(el);
-        }))
 }
 
 if(window.location.pathname === "/today.html") window.onload = getToday;
-if(window.location.pathname === "/results.html") window.onload = getDate;

@@ -88,22 +88,4 @@ class HolidayService:
         an empty list.
         """
 
-        holidays: List[Holiday] = []
-
-        # Translate the raw iso date into a Python Date
-        # then fetch from that date
-        # Notice the same private function as in get_today
-        search_date = date.fromisoformat(raw_date)
-        raw_data = self._fetch_date(search_date)
-
-        for raw_holiday in raw_data:
-
-            name = raw_holiday.get("name")
-            description = raw_holiday.get("description")
-            current_date = datetime.fromisoformat(raw_holiday.get("date").get("iso"))
-
-            holiday = Holiday(name=name, description=description, date=current_date)
-
-            holidays.append(holiday)
-
-        return holidays
+        raise NotImplementedError()
